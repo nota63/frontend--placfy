@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { useState } from "react";
 import {
   LayoutDashboard,
@@ -8,7 +8,7 @@ import {
   Settings,
   Search,
   Bell,
-=======
+
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ import {
   BarChart3, Megaphone, LogOut, Bell, ArrowRight,
   Plus, Filter, MoreHorizontal, TrendingUp, Package, CreditCard,
   UserPlus, Mail, ShieldCheck
->>>>>>> bc20423 (invit)
+
 } from "lucide-react";
 
 
