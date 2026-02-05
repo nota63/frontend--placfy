@@ -77,7 +77,15 @@ export default function Workspace() {
       const responseData = await response.json();
       toast.success('Your workspace is created!', { duration: 2000 });
       
-      // No need to store in localStorage - dashboard will fetch from API
+      // Store the workspace data in localStorage for immediate access
+      // Including: id, name, slug, tenant_id, and info
+      localStorage.setItem('currentWorkspace', JSON.stringify({
+        id: responseData.id,
+        name: responseData.name,
+        slug: responseData.slug,
+        tenant_id: responseData.tenant_id,
+        info: responseData.info
+      }));
       
       setForm({
         name: "",

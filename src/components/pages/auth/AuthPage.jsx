@@ -13,7 +13,7 @@ export default function AuthPage() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800">
+
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
         {showLogin ? (
           <Login onSignupClick={() => setShowLogin(false)} />
@@ -21,6 +21,6 @@ export default function AuthPage() {
           <Signup onLoginClick={() => setShowLogin(true)} />
         )}
       </div>
-    </div>
+
   );
 }
