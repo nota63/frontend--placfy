@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import toast from 'react-hot-toast';
 import { FiMail, FiLock, FiUser } from 'react-icons/fi';
+// ================================================================================
 
 const signupSchema = yup.object().shape({
   username: yup.string().min(3, 'Username must be at least 3 characters').required('Username is required'),
@@ -101,6 +102,7 @@ export default function Signup({ onLoginClick }) {
               className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="••••••"
             />
+
           </div>
           {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
         </div>
@@ -140,3 +142,7 @@ export default function Signup({ onLoginClick }) {
     </div>
   );
 }
+
+
+
+
